@@ -4,7 +4,8 @@
 using namespace std;
 
 
-void SelectionSort (int* arr, const int SIZE)
+template <typename T>
+void SelectionSort (T* arr, const int SIZE)
 {
 	for (int i = 0; i < SIZE; i++)
 	{
@@ -17,35 +18,6 @@ void SelectionSort (int* arr, const int SIZE)
 		}
 	}
 }
-
-void SelectionSort(double* arr, const int SIZE)
-{
-	for (int i = 0; i < SIZE; i++)
-	{
-		for (int j = i; j < SIZE; j++)
-		{
-			if (arr[j] < arr[i])
-			{
-				swap(arr[i], arr[j]);
-			}
-		}
-	}
-}
-
-void SelectionSort(Complex* arr, const int SIZE)
-{
-	for (int i = 0; i < SIZE; i++)
-	{
-		for (int j = i; j < SIZE; j++)
-		{
-			if (arr[j].
-			{
-				swap(arr[i], arr[j]);
-			}
-		}
-	}
-}
-
 
 
 
